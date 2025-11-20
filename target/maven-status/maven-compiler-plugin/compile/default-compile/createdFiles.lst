@@ -1,0 +1,13 @@
+com\toolschallenge\domain\enums\StatusTransacao.class
+com\toolschallenge\domain\Transacao.class
+com\toolschallenge\ToolschallengeApplication.class
+com\toolschallenge\service\PagamentoService.class
+com\toolschallenge\dto\TransacaoResponseDTO.class
+com\toolschallenge\repository\TransacaoRepository.class
+com\toolschallenge\dto\DescricaoDTO.class
+com\toolschallenge\dto\TransacaoRequestDTO.class
+com\toolschallenge\domain\enums\TipoPagamento.class
+com\toolschallenge\domain\FormaPagamento.class
+com\toolschallenge\domain\Descricao.class
+com\toolschallenge\controller\PagamentoController.class
+com\toolschallenge\dto\FormaPagamentoDTO.class
