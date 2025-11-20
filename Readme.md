@@ -45,20 +45,18 @@ A solução está dividida em camadas:
 
 - Java 17+
 
-### Rodando a aplicação
-
-    Via terminal na pasta target executar o seguinte comando:
-        java -jar ToolsChallenge-0.0.1-SNAPSHOT.jar
+###  Via terminal na pasta target executar o seguinte comando
+    java -jar ToolsChallenge-0.0.1-SNAPSHOT.jar
 
 ### Banco de Dados
-    Acesse o navegador com a seginte url:
+- Acesse o navegador com a seginte url:
         http://localhost:8080/h2-console
     
     ![Tela login H2](assets/db.png)
 
-### JSON Exemplo Pagamento
+### JSONs
 
-    Pagamento:
+### Pagamento:
 
     {
         "cartao": "4111111111111112", 
@@ -72,7 +70,7 @@ A solução está dividida em camadas:
         }
     }
 
-    Resposta Pagamento:
+### Resposta Pagamento:
 
     {
         "id": 1,
@@ -91,7 +89,7 @@ A solução está dividida em camadas:
         }
     }
 
-    Resposta estorno:
+### Resposta estorno:
 
     {
         "id": 1,
