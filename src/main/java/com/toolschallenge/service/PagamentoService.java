@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -53,23 +54,19 @@ public class PagamentoService {
     }
 
     @Transactional(readOnly = true)
-    public TransacaoResponseDTO buscarPorId(Long id) {
-        Transacao transacao = transacaoRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Transação não encontrada"));
-        return toResponseDTO(transacao);
+    public Optional<Transacao> buscarPorId(Long id) {
+        return transacaoRepository.findById(id);
     }
 
     @Transactional
-    public TransacaoResponseDTO estornarPagamento(Long id) {
-        Transacao transacao = transacaoRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Transação não encontrada"));
+    public TransacaoResponseDTO estornarPagamento(Transacao transacao) {
         transacao.setEstornado(true);
         transacao.setStatus(StatusTransacao.CANCELADO);
 
         return toResponseDTO(transacao);
     }
 
-    private TransacaoResponseDTO toResponseDTO(Transacao transacao) {
+    public TransacaoResponseDTO toResponseDTO(Transacao transacao) {
         TransacaoResponseDTO dto = new TransacaoResponseDTO();
         dto.setId(transacao.getId());
         String numeroCartao = transacao.getNumeroCartao();

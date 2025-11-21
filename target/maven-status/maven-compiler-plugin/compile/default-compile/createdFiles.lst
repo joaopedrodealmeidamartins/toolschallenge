@@ -5,6 +5,7 @@ com\toolschallenge\service\PagamentoService.class
 com\toolschallenge\dto\TransacaoResponseDTO.class
 com\toolschallenge\repository\TransacaoRepository.class
 com\toolschallenge\dto\DescricaoDTO.class
+com\toolschallenge\OpenApiConfig.class
 com\toolschallenge\dto\TransacaoRequestDTO.class
 com\toolschallenge\domain\enums\TipoPagamento.class
 com\toolschallenge\domain\FormaPagamento.class

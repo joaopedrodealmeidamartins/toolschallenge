@@ -54,6 +54,13 @@ A solução está dividida em camadas:
     
     ![Tela login H2](assets/db.png)
 
+
+### SWAGGER
+- Acesse o navegador com a seginte url:
+        http://localhost:8080/swagger-ui
+    
+    ![Tela Swagger](assets/swagger.png)
+
 ### JSONs
 
 ### Pagamento:
